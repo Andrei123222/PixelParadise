@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/411058a7b2.js" crossorigin="anonymous"></script>
+<title>Pixel Paradise</title>
+<link rel="icon" href="cheems.jpg" type="image/x-icon">
+<style>
+body 
+{
+	background-image: url('insula.jpg');
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-size: cover;
+	font-family: Times New Roman;
+    padding: 10px;
+}
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #041f14;
+}
+
+li 
+{
+  float: left;
+}
+
+li_d 
+{
+  float: right;
+}
+ 
+li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li_d a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #FB8B31;
+}
+
+li_d a:hover {
+  background-color: #FB8B31;
+}
+.active
+{
+	background-color: #04AA6D;
+}
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.column img {
+  opacity: 0.7; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+img {
+  border-radius: 8px;
+}
+
+.text {
+  border: 10px solid black;
+  background-color: #56ba8a;
+}
+h1 {
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
+h2 {
+  text-align: left;
+  color: #041f14;
+  padding-left: 20px;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #04AA6D;
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  border: 2px solid black;
+}
+</style>
+</head>
+<body>
+<p style="text-align:center;"><img src="titlu.png" alt="Logo"></p>
+<ul>
+  <li><a href="index.html"><i class="fa-solid fa-house"></i> Acasa</a></li>
+  <li><a href="Contact.html"><i class="fa-solid fa-square-phone"></i> Contact</a></li>
+  <li><a class="active" href="Galerie.html"><i class="fa-solid fa-image"></i> Galerie</a></li>
+  <li_d><a href="Sugestii.html"><i class="fa-solid fa-comment"></i> Sugestii</a></li_d>
+</ul>
+
+<div class="text">
+	<h1>1. KINGDOM TWO CROWNS</h1>
+	<h2>Lansat pe data de 11 Dec, 2018</h2>
+	<h2>Categorii: Strategy, Adventure, Indie, 2D</h2>
+	<h2><a href="https://www.kingdomthegame.com">Site oficial<a><h2>
+</div>
+
+<div class="row">
+	<div class="column">
+		<img src="kingdom2.jpg" style="width:100%" onclick="myFunction1(this);">		
+	</div>
+	<div class="column">
+		<img src="kingdom1.jpg" style="width:100%" onclick="myFunction1(this);">
+	</div>
+	<div class="column">
+		<img src="kingdom3.jpg" style="width:100%" onclick="myFunction1(this);">
+	</div>
+	<div class="column">
+		<img src="kingdom4.jpg" style="width:100%" onclick="myFunction1(this);">
+	</div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<div class="text">
+	<h1>2. TERRARIA</h1>
+	<h2>Lansat pe data de 16 Mai, 2011</h2>
+	<h2>Categorii: Open World, Survival, Sandbox, 2D</h2>
+	<h2><a href="https://terraria.org">Site oficial</a></h2>
+</div>
+<div class="row">
+	<div class="column">
+		<img src="terraria1.jpg" style="width:100%" onclick="myFunction2(this);">		
+	</div>
+	<div class="column">
+		<img src="terraria2.jpg" style="width:100%" onclick="myFunction2(this);">
+	</div>
+	<div class="column">
+		<img src="terraria3.jpg" style="width:100%" onclick="myFunction2(this);">
+	</div>
+	<div class="column">
+		<img src="terraria4.jpg" style="width:100%" onclick="myFunction2(this);">
+	</div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg2" style="width:100%">
+  <div id="imgtext2"></div>
+</div>
+
+<div class="text">
+	<h1>3. VALHEIM</h1>
+	<h2>Lansat pe data de 2 Feb, 2021</h2>
+	<h2>Categorii: Open World, Survival, Online Co-Op</h2>
+	<h2><a href="https://www.valheimgame.com">Site oficial</a></h2>
+</div>
+
+<div class="row">
+	<div class="column">
+		<img src="valheim1.jpg" style="width:100%" onclick="myFunction3(this);">		
+	</div>
+	<div class="column">
+		<img src="valheim2.jpg" style="width:100%" onclick="myFunction3(this);">
+	</div>
+	<div class="column">
+		<img src="valheim3.jpg" style="width:100%" onclick="myFunction3(this);">
+	</div>
+	<div class="column">
+		<img src="valheim4.jpg" style="width:100%" onclick="myFunction3(this);">
+	</div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg3" style="width:100%">
+  <div id="imgtext3"></div>
+</div>
+
+<div class="text">
+	<h1>4. DEATH TRASH</h4>
+	<h2>Lansat pe 5 Aug, 2021</h2>
+	<h2>Categorii: Early Acces, Post-Apocalyptic, 2D, Action</h2>
+	<h2><a href="http://www.deathtrash.com">Site oficial</a></h2>
+</div>	
+<div class="row">
+	<div class="column">
+		<img src="death trash1.jpg" style="width:100%" onclick="myFunction4(this);">		
+	</div>
+	<div class="column">
+		<img src="death trash2.jpg" style="width:100%" onclick="myFunction4(this);">
+	</div>
+	<div class="column">
+		<img src="death trash3.jpg" style="width:100%" onclick="myFunction4(this);">
+	</div>
+	<div class="column">
+		<img src="death trash4.jpg" style="width:100%" onclick="myFunction4(this);">
+	</div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg4" style="width:100%">
+  <div id="imgtext4"></div>
+</div>
+
+<div class="text">
+	<h1>5. BLASPHEMOUS</h1>
+	<h2>Lansat pe 10 Sep, 2021</h2>
+	<h2>Categorii: Dark Fantasy, Souls-like, Platformer, 2D, Violent</h2>
+	<h2><a href="https://store.steampowered.com/app/774361/Blasphemous/">Link Steam(nu are site oficial)</a></h2>
+</div>
+
+<div class="row">
+	<div class="column">
+		<img src="blasphemous1.jpg" style="width:100%" onclick="myFunction5(this);">		
+	</div>
+	<div class="column">
+		<img src="blasphemous2.jpg" style="width:100%" onclick="myFunction5(this);">
+	</div>
+	<div class="column">
+		<img src="blasphemous3.jpg" style="width:100%" onclick="myFunction5(this);">
+	</div>
+	<div class="column">
+		<img src="blasphemous4.jpg" style="width:100%" onclick="myFunction5(this);">
+	</div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg5" style="width:100%">
+  <div id="imgtext5"></div>
+</div>
+
+<div class="text">
+	<h1>6. UNTURNED</h1>
+	<h2>Lansat pe 7 Iul, 2017</h2>
+	<h2>Categorii: Survival, Zombies, Multiplayer, First-Person, Sandbox</h2>
+	<h2><a href="https://smartlydressedgames.com">Site oficial</a></h2>
+</div>
+
+<div class="row">
+	<div class="column">
+		<img src="unturned1.jpg" style="width:100%" onclick="myFunction6(this);">		
+	</div>
+	<div class="column">
+		<img src="unturned2.jpg" style="width:100%" onclick="myFunction6(this);">
+	</div>
+	<div class="column">
+		<img src="unturned3.jpg" style="width:100%" onclick="myFunction6(this);">
+	</div>
+	<div class="column">
+		<img src="unturned4.jpg" style="width:100%" onclick="myFunction6(this);">
+	</div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg6" style="width:100%">
+  <div id="imgtext6"></div>
+</div>
+
+<div class="text">
+	<h1>7. FORAGER</h1>
+	<h2>Lansat pe 18 Apr, 2019</h2>
+	<h2>Categorii: Survival, Crafting, Multiplayer, 2D, Casual</h2>
+	<h2><a href="https://hopfrogsa.net/forager">Site oficial</a></h2>
+</div>
+
+<div class="row">
+	<div class="column">
+		<img src="forager1.jpg" style="width:100%" onclick="myFunction7(this);">		
+	</div>
+	<div class="column">
+		<img src="forager2.jpg" style="width:100%" onclick="myFunction7(this);">
+	</div>
+	<div class="column">
+		<img src="forager3.jpg" style="width:100%" onclick="myFunction7(this);">
+	</div>
+	<div class="column">
+		<img src="forager4.jpg" style="width:100%" onclick="myFunction7(this);">
+	</div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg7" style="width:100%">
+  <div id="imgtext7"></div>
+</div>
+
+<div class="text">
+	<h1>8. GEOMETRY DASH</h1>
+	<h2>Lansat pe 22 Dec, 2014</h2>
+	<h2>Categorii: Music, Precision Platformer, Colorful, 2D, Rhythm</h2>
+	<h2><a href="https://store.steampowered.com/app/322170/Geometry_Dash/">Link Steam(nu are site oficial)</a></h2>
+</div>
+
+<div class="row">
+	<div class="column">
+		<img src="geometry dash1.jpg" style="width:100%" onclick="myFunction8(this);">		
+	</div>
+	<div class="column">
+		<img src="geometry dash2.jpg" style="width:100%" onclick="myFunction8(this);">
+	</div>
+	<div class="column">
+		<img src="geometry dash3.jpg" style="width:100%" onclick="myFunction8(this);">
+	</div>
+	<div class="column">
+		<img src="geometry dash4.jpg" style="width:100%" onclick="myFunction8(this);">
+	</div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg8" style="width:100%">
+  <div id="imgtext8"></div>
+</div>
+
+<div class="text">
+	<h1>9. BROFORCE</h1>
+	<h2>Lansat pe 15 Oct, 2015</h2>
+	<h2>Categorii: America, Action, Co-Op, 2D, Adventure</h2>
+	<h2><a href="https://www.broforcegame.com">Site oficial</a></h2>
+</div>
+
+<div class="row">
+	<div class="column">
+		<img src="broforce1.jpg" style="width:100%" onclick="myFunction9(this);">		
+	</div>
+	<div class="column">
+		<img src="broforce2.jpg" style="width:100%" onclick="myFunction9(this);">
+	</div>
+	<div class="column">
+		<img src="broforce3.jpg" style="width:100%" onclick="myFunction9(this);">
+	</div>
+	<div class="column">
+		<img src="broforce4.jpg" style="width:100%" onclick="myFunction9(this);">
+	</div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg9" style="width:100%">
+  <div id="imgtext9"></div>
+</div>
+
+<div class="text">
+	<h1>10. PAPERS, PLEASE</h1>
+	<h2>Lansat pe 8 Aug, 2013</h2>
+	<h2>Categorii: Indie, Political, Simulation, Retro, Point & Click</h2>
+	<h2><a href="https://papersplea.se">Site oficial</a></h2>
+</div>
+
+<div class="row">
+	<div class="column">
+		<img src="papers1.jpg" style="width:100%" onclick="myFunction10(this);">		
+	</div>
+	<div class="column">
+		<img src="papers2.jpg" style="width:100%" onclick="myFunction10(this);">
+	</div>
+	<div class="column">
+		<img src="papers3.jpg" style="width:100%" onclick="myFunction10(this);">
+	</div>
+	<div class="column">
+		<img src="papers4.jpg" style="width:100%" onclick="myFunction10(this);">
+	</div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg10" style="width:100%">
+  <div id="imgtext10"></div>
+</div>
+
+<script>
+function myFunction1(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+function myFunction2(imgs) {
+  var expandImg2 = document.getElementById("expandedImg2");
+  var imgText2 = document.getElementById("imgtext2");
+  expandImg2.src = imgs.src;
+  imgText2.innerHTML = imgs.alt;
+  expandImg2.parentElement.style.display = "block";
+}
+function myFunction3(imgs) {
+  var expandImg3 = document.getElementById("expandedImg3");
+  var imgText3 = document.getElementById("imgtext3");
+  expandImg3.src = imgs.src;
+  imgText3.innerHTML = imgs.alt;
+  expandImg3.parentElement.style.display = "block";
+}
+function myFunction4(imgs) {
+  var expandImg4 = document.getElementById("expandedImg4");
+  var imgText4 = document.getElementById("imgtext4");
+  expandImg4.src = imgs.src;
+  imgText4.innerHTML = imgs.alt;
+  expandImg4.parentElement.style.display = "block";
+}
+function myFunction5(imgs) {
+  var expandImg5 = document.getElementById("expandedImg5");
+  var imgText5 = document.getElementById("imgtext5");
+  expandImg5.src = imgs.src;
+  imgText5.innerHTML = imgs.alt;
+  expandImg5.parentElement.style.display = "block";
+}
+function myFunction6(imgs) {
+  var expandImg6 = document.getElementById("expandedImg6");
+  var imgText6 = document.getElementById("imgtext6");
+  expandImg6.src = imgs.src;
+  imgText6.innerHTML = imgs.alt;
+  expandImg6.parentElement.style.display = "block";
+}
+function myFunction7(imgs) {
+  var expandImg7 = document.getElementById("expandedImg7");
+  var imgText7 = document.getElementById("imgtext7");
+  expandImg7.src = imgs.src;
+  imgText7.innerHTML = imgs.alt;
+  expandImg7.parentElement.style.display = "block";
+}
+function myFunction8(imgs) {
+  var expandImg8 = document.getElementById("expandedImg8");
+  var imgText8 = document.getElementById("imgtext8");
+  expandImg8.src = imgs.src;
+  imgText8.innerHTML = imgs.alt;
+  expandImg8.parentElement.style.display = "block";
+}
+function myFunction9(imgs) {
+  var expandImg9 = document.getElementById("expandedImg9");
+  var imgText9 = document.getElementById("imgtext9");
+  expandImg9.src = imgs.src;
+  imgText9.innerHTML = imgs.alt;
+  expandImg9.parentElement.style.display = "block";
+}
+function myFunction10(imgs) {
+  var expandImg10 = document.getElementById("expandedImg10");
+  var imgText10 = document.getElementById("imgtext10");
+  expandImg10.src = imgs.src;
+  imgText10.innerHTML = imgs.alt;
+  expandImg10.parentElement.style.display = "block";
+}
+</script>
+<footer>
+  &copy; Atestat: Pixel Paradise 2022
+</footer>
+</body>
+</html>
